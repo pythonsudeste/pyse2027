@@ -1,0 +1,1 @@
+export { ProgramationPanel } from "./programationPanel";

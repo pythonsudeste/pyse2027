@@ -1,0 +1,1 @@
+export const linksTicketSaleSite = "https://ingressos.python.org.br/sudeste/ingressos/"

@@ -1,0 +1,9 @@
+SponsorsData:
+  Platina:
+    - name: Fiap
+      id: 1
+      logo: sponsorsLogo/fiap.logo.webp
+  Ouro:
+    - name: Elastic
+      id: 1
+      logo: https://static.cdnlogo.com/logos/e/45/elastic.svg

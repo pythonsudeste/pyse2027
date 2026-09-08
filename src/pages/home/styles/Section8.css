@@ -1,0 +1,126 @@
+.Section8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+    margin-bottom: 30px;
+
+    & img {
+        margin-top: 75px;
+        width: 55vw;
+    }
+}
+
+.Section8_itens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    background-color: aliceblue;
+    width: 80%;
+    max-width: 640px;
+    padding: 50px 0px;
+    border-radius: 30px;
+    border: 4px #000 solid;
+    box-shadow: -9px 10px 0px 9px #000;
+}
+
+.Section8_titulo {
+    text-align: center;;
+    color: #820525;
+
+    & h4 {
+        font-size: 30px;
+        margin-bottom: 15px;
+        width: 80vw;
+        max-width: 300px;
+    }
+
+    & h5 {
+        font-size: 20px;
+        width: 80vw;
+        max-width: 300px;
+    }
+}
+
+.Section8_texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    & p {
+        font-size: 18px;
+        width: 80vw;
+        max-width: 550px;
+        text-align: start;
+    }
+
+    & .Section8_texto_link_externo {
+        color: #820525;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+}
+
+@media (max-width : 800px) {
+    .Section8_itens {
+        border: 2px #000 solid;
+        box-shadow: -6px 5px 0px 6px #000;
+    }
+    .Section8_texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        & p {
+            font-size: 18px;
+            width: 80vw;
+            max-width: 350px;
+            text-align: start;
+        }
+    }
+}
+
+@media (max-width : 550px) {
+    .Section8_texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        & p {
+            font-size: 18px;
+            width: 80vw;
+            max-width: 180px;
+            text-align: start;
+        }
+    }
+
+    .Section8_titulo {
+        text-align: center;
+
+        & h4 {
+            font-size: 26px;
+            margin-bottom: 15px;
+            width: 80vw;
+            max-width: 200px;
+        }
+
+        & h5 {
+            font-size: 20px;
+            width: 80vw;
+            max-width: 200px;
+        }
+    }
+}

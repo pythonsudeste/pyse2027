@@ -1,0 +1,104 @@
+.Section7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+        width: 55vw;
+    }
+}
+
+.Section7-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 40px 0px;
+
+    background-color: #820525;
+    padding: 20px 10px;
+    border-radius: 20px;
+    box-shadow: -8px 8px 0px 0px #fdc55e;
+
+    & h4 {
+        width: 60vw;
+        max-width: 350px;
+        font-size: 30px;
+        color: aliceblue;
+        margin-bottom: 15px;
+    }
+
+    & h5 {
+        font-size: 20px;
+        width: 80vw;
+        max-width: 450px;
+        font-weight: 600;
+        color: aliceblue;
+        margin-bottom: 25px;
+    }
+
+    & button {
+        font-size: 20px;
+        font-weight: 600;
+        color: #500417;
+        background-color: #fdc55e;
+        padding: 15px 8px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+    }
+
+    & button:hover {
+        font-size: 22px;
+        color: #000000;
+        background-color: #afe1e7;
+        padding: 15px 10px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width : 800px) {
+    .Section7 {
+        & img {
+            width: 70vw;
+        }
+    }
+    
+    .Section7-texto {
+        padding: 15px 12px;
+        border-radius: 15px;
+        box-shadow: -6px 6px 0px 0px #fdc55e;
+        & h4 {
+            max-width: 300px;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        & h5 {
+            font-size: 18px;
+            max-width: 250px;
+            color: aliceblue;
+            margin-bottom: 20px;
+        }
+
+        & button {
+            width: 250px;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 12px 8px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+
+        & button:hover {
+            font-size: 22px;
+            color: #000000;
+            background-color: #afe1e7;
+            padding: 15px 10px;
+            cursor: pointer;
+        }
+    }
+}
