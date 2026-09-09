@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local design source; only the extracted 2027 pages are published.
+PySE 2027 Page Design.zip

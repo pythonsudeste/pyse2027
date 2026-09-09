@@ -1,1 +1,0 @@
-export { SectionSponsors } from "./SectionSponsors";
