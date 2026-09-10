@@ -1,0 +1,50 @@
+[
+  {
+    "source": "130-IMG_0350.jpg",
+    "slug": "comunidade",
+    "caption": "Comunidade reunida",
+    "alt": "Participantes e organização reunidos no auditório, acenando para a foto.",
+    "width": 1600,
+    "height": 1057
+  },
+  {
+    "source": "107-IMG_20250531_115059538_HDR.png",
+    "slug": "palestra",
+    "caption": "Conhecimento compartilhado",
+    "alt": "Duas pessoas apresentam uma palestra para o público no auditório.",
+    "width": 1600,
+    "height": 900
+  },
+  {
+    "source": "79-IMG_0146.jpg",
+    "slug": "cafe",
+    "caption": "Uma pausa para se conhecer",
+    "alt": "Participantes de camiseta amarela conversam durante o café.",
+    "width": 1600,
+    "height": 1220
+  },
+  {
+    "source": "37-IMG_0555.jpg",
+    "slug": "encontros",
+    "caption": "Conversas que continuam",
+    "alt": "Participantes conversam e sorriem na área externa do evento.",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "source": "59-IMG_20250531_102146272_HDR.jpg",
+    "slug": "intervalo",
+    "caption": "Entre uma palestra e outra",
+    "alt": "Público reunido ao redor da mesa de café durante um intervalo.",
+    "width": 1600,
+    "height": 900
+  },
+  {
+    "source": "67-IMG_0132.jpg",
+    "slug": "trocas",
+    "caption": "Gente que compartilha",
+    "alt": "Grupo de participantes conversa em frente à entrada do evento.",
+    "width": 1600,
+    "height": 1067
+  }
+]
