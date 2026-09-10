@@ -45,13 +45,15 @@ Foram adicionadas uma barra para alternar entre as propostas e adaptações de l
 
 ## Estudo de fotos — opção 3
 
-A seção mantém o texto e a identidade da opção 2. O seletor alterna entre quatro variações, com links compartilháveis:
+A seção mantém o título, os dois parágrafos e a identidade da opção 2. O texto recebeu apenas a frase “É um encontro de pessoas que aprendem juntas, trocam experiências e constroem comunidade.”, também aplicada na opção 2. O selo “pessoas > tecnologia” acompanha o título nas quatro composições.
 
-- [A — Mosaico](https://pythonsudeste.github.io/pyse2027/opcao-3/?galeria=mosaico#sobre): foto principal e quatro registros menores.
-- [B — Faixa horizontal](https://pythonsudeste.github.io/pyse2027/opcao-3/?galeria=faixa#sobre): seis fotos, rolagem por toque/teclado e botões anterior/próxima.
-- [C — Mural de memórias](https://pythonsudeste.github.io/pyse2027/opcao-3/?galeria=mural#sobre): seis fotos com molduras e pequenas rotações.
-- [D — Foto em destaque](https://pythonsudeste.github.io/pyse2027/opcao-3/?galeria=destaque#sobre): imagem ampla e seis miniaturas para seleção.
+As fotos fazem parte da composição do próprio Sobre, sem títulos ou blocos de galeria adicionais após o texto. O seletor alterna a seção completa. Os links anteriores continuam válidos:
+
+- [A — Ao lado do texto](https://pythonsudeste.github.io/pyse2027/opcao-3/?galeria=mosaico#sobre): três fotos aproveitam a coluna do título, ao lado dos parágrafos.
+- [B — Entre parágrafos](https://pythonsudeste.github.io/pyse2027/opcao-3/?galeria=faixa#sobre): uma faixa compacta com oito fotos entra no fluxo de leitura.
+- [C — Colagem lateral](https://pythonsudeste.github.io/pyse2027/opcao-3/?galeria=mural#sobre): três fotos com pequenas sobreposições junto ao título e ao texto.
+- [D — Foto sob o título](https://pythonsudeste.github.io/pyse2027/opcao-3/?galeria=destaque#sobre): foto e oito miniaturas na coluna lateral.
 
 Todas permitem ampliar as fotos em um diálogo, navegar por setas e fechar com Escape. Sem JavaScript, as variações ficam visíveis em sequência e os links abrem as imagens diretamente. Não há avanço automático das fotos.
 
-As seis imagens fornecidas em `fotos/` foram exportadas para `site/assets/fotos/` em WebP, com larguras de 800 e 1600 pixels, `srcset` e carregamento sob demanda. Os originais permanecem intactos na pasta local; somente as cópias otimizadas são versionadas e publicadas. O arquivo `site/assets/fotos/manifest.json` registra a correspondência com os nomes originais e as descrições. As legendas descrevem as cenas, sem atribuir datas ou créditos não informados.
+As oito imagens fornecidas em `fotos/` foram exportadas para `site/assets/fotos/` em WebP, com larguras de 800 e 1600 pixels, `srcset` e carregamento sob demanda. Os originais permanecem intactos na pasta local; somente as cópias otimizadas são versionadas e publicadas. O arquivo `site/assets/fotos/manifest.json` registra a correspondência com os nomes originais e as descrições. As legendas descrevem as cenas, sem atribuir datas ou créditos não informados.
