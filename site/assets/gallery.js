@@ -1,10 +1,10 @@
 const panels = [...document.querySelectorAll('[data-variant]')];
 const variantLinks = [...document.querySelectorAll('[data-variant-link]')];
 const summaries = {
-  mosaico: 'Vários momentos de uma vez. Uma foto principal dá o tom, acompanhada por pequenos encontros.',
-  faixa: 'Uma sequência para explorar no seu ritmo. Use as setas ou deslize as fotos.',
-  mural: 'Um álbum com jeito de encontro: fotos soltas, pequenas legendas e uma composição mais afetiva.',
-  destaque: 'Uma imagem por vez, com espaço para os detalhes. Escolha outro momento nas miniaturas.',
+  mosaico: 'Fotos ao lado dos parágrafos, aproveitando o espaço abaixo do título.',
+  faixa: 'Uma faixa compacta de fotos entre os dois parágrafos, acompanhando a leitura.',
+  mural: 'Uma pequena colagem junto ao título e ao texto, com o selo pessoas > tecnologia.',
+  destaque: 'Uma foto sob o título, com miniaturas para explorar os oito registros.',
 };
 
 function showVariant() {
@@ -44,7 +44,7 @@ function updateFilm() {
   const left = film.getBoundingClientRect().left;
   filmIndex = slides.reduce((closest, slide, index) =>
     Math.abs(slide.getBoundingClientRect().left - left) < Math.abs(slides[closest].getBoundingClientRect().left - left) ? index : closest, 0);
-  document.querySelector('[data-film-status]').textContent = `${String(filmIndex + 1).padStart(2, '0')} / 06`;
+  document.querySelector('[data-film-status]').textContent = `${String(filmIndex + 1).padStart(2, '0')} / ${String(slides.length).padStart(2, '0')}`;
   previous.disabled = filmIndex === 0;
   next.disabled = filmIndex === slides.length - 1;
 }
@@ -59,7 +59,7 @@ film.addEventListener('scroll', updateFilm, { passive: true });
 window.addEventListener('resize', updateFilm);
 document.querySelector('.film-controls').hidden = false;
 
-// Reuse the six static film entries as the photo catalog, with no extra request.
+// Reuse the static film entries as the photo catalog, with no extra request.
 const photos = slides.map((slide) => {
   const link = slide.querySelector('[data-photo]');
   const img = link.querySelector('img');
