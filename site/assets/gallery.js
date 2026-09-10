@@ -1,16 +1,17 @@
 const panels = [...document.querySelectorAll('[data-variant]')];
 const variantLinks = [...document.querySelectorAll('[data-variant-link]')];
 const summaries = {
-  mosaico: 'Fotos ao lado dos parágrafos, aproveitando o espaço abaixo do título.',
-  faixa: 'Uma faixa compacta de fotos entre os dois parágrafos, acompanhando a leitura.',
-  mural: 'Uma pequena colagem junto ao título e ao texto, com o selo pessoas > tecnologia.',
-  destaque: 'Uma foto sob o título, com miniaturas para explorar os oito registros.',
+  todas: 'Comparação completa: quatro variantes, oito fotos em cada uma. As faixas de início e fim delimitam cada proposta.',
+  mosaico: 'Variante A · Oito fotos ao lado dos parágrafos, abaixo do título.',
+  faixa: 'Variante B · Oito fotos entre os parágrafos. Deslize ou use as setas para percorrer todas.',
+  mural: 'Variante C · Oito fotos em uma colagem junto ao título e ao texto.',
+  destaque: 'Variante D · Oito fotos disponíveis nas miniaturas. Selecione qualquer uma para destacá-la.',
 };
 
 function showVariant() {
   const requested = new URL(location.href).searchParams.get('galeria');
-  const variant = panels.some((panel) => panel.dataset.variant === requested) ? requested : 'mosaico';
-  panels.forEach((panel) => { panel.hidden = panel.dataset.variant !== variant; });
+  const variant = panels.some((panel) => panel.dataset.variant === requested) ? requested : 'todas';
+  panels.forEach((panel) => { panel.hidden = variant !== 'todas' && panel.dataset.variant !== variant; });
   variantLinks.forEach((link) => {
     if (link.dataset.variantLink === variant) link.setAttribute('aria-current', 'true');
     else link.removeAttribute('aria-current');
@@ -68,9 +69,11 @@ const photos = slides.map((slide) => {
 const spotlight = document.querySelector('.spotlight-main');
 const thumbs = [...document.querySelectorAll('[data-thumb]')];
 spotlight.querySelector('figcaption').setAttribute('aria-live', 'polite');
-thumbs.forEach((button) => {
-  button.addEventListener('click', () => {
-    const photo = photos.find((item) => item.slug === button.dataset.thumb);
+thumbs.forEach((thumb) => {
+  thumb.addEventListener('click', (event) => {
+    if (!plainClick(event)) return;
+    event.preventDefault();
+    const photo = photos.find((item) => item.slug === thumb.dataset.thumb);
     const link = spotlight.querySelector('[data-photo]');
     const img = link.querySelector('img');
     link.href = photo.url;
@@ -80,7 +83,10 @@ thumbs.forEach((button) => {
     img.src = photo.src;
     img.alt = photo.alt;
     spotlight.querySelector('figcaption').textContent = photo.caption;
-    thumbs.forEach((thumb) => thumb.setAttribute('aria-pressed', String(thumb === button)));
+    thumbs.forEach((item) => {
+      if (item === thumb) item.setAttribute('aria-current', 'true');
+      else item.removeAttribute('aria-current');
+    });
   });
 });
 document.querySelector('.photo-thumbnails').hidden = false;

@@ -135,6 +135,7 @@
 <a href="../opcao-2/#sobre">Ver base escolhida ↗</a>
 </div>
       <nav class="variant-picker" aria-label="Variações de composição">
+<a href="?galeria=todas#sobre" data-variant-link="todas" aria-controls="variantes">Ver todas</a>
 <a href="?galeria=mosaico#sobre" data-variant-link="mosaico" aria-controls="galeria-mosaico">
 <span>A</span> Ao lado do texto</a>
 <a href="?galeria=faixa#sobre" data-variant-link="faixa" aria-controls="galeria-faixa">
@@ -144,41 +145,98 @@
 <a href="?galeria=destaque#sobre" data-variant-link="destaque" aria-controls="galeria-destaque">
 <span>D</span> Foto sob o título</a>
 </nav>
-      <p id="variation-summary" aria-live="polite">Fotos ao lado dos parágrafos, aproveitando o espaço abaixo do título.</p>
+      <p id="variation-summary" aria-live="polite">Comparação completa: quatro variantes, oito fotos em cada uma. As faixas de início e fim delimitam cada proposta.</p>
     </aside>
-    <div class="about-version layout-mosaico" id="galeria-mosaico" data-variant="mosaico" aria-label="A · Ao lado do texto">
+    <div id="variantes">
+<article class="variant-frame" id="galeria-mosaico" data-variant="mosaico" aria-labelledby="titulo-mosaico">
+<header class="variant-start">
+<div>
+<span class="variant-label">Início da variante A</span>
+<h2 id="titulo-mosaico">A · Ao lado do texto</h2>
+</div>
+<span class="variant-photo-count">8 fotos</span>
+</header>
+<div class="about-version layout-mosaico">
 <div class="about-heading">
 <h3>Sobre<br>o evento</h3>
 <p>Uma das maiores conferências regionais de Python do Brasil.</p>
 <span class="people-first">pessoas <b>&gt;</b> tecnologia</span>
 </div>
 <div class="about-photos inline-mosaic">
-<figure class="photo-card mosaic-lead">
+<figure class="photo-card">
 <a class="photo-open" href="../assets/fotos/comunidade-rio-1600.webp" data-photo="comunidade-rio" aria-label="Ampliar: Mais um encontro da comunidade">
 <img src="../assets/fotos/comunidade-rio-800.webp" srcset="../assets/fotos/comunidade-rio-800.webp 800w, ../assets/fotos/comunidade-rio-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 440px" width="1600" height="1067" alt="Participantes reunidos para uma foto coletiva no espaço do evento." loading="lazy" decoding="async">
 <span class="photo-zoom" aria-hidden="true">↗</span>
 </a>
 <figcaption>Mais um encontro da comunidade</figcaption>
 </figure>
-<figure class="photo-card ">
-<a class="photo-open" href="../assets/fotos/cafe-1600.webp" data-photo="cafe" aria-label="Ampliar: Uma pausa para se conhecer">
-<img src="../assets/fotos/cafe-800.webp" srcset="../assets/fotos/cafe-800.webp 800w, ../assets/fotos/cafe-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 440px" width="1600" height="1220" alt="Participantes de camiseta amarela conversam durante o café." loading="lazy" decoding="async">
-<span class="photo-zoom" aria-hidden="true">↗</span>
-</a>
-<figcaption>Uma pausa para se conhecer</figcaption>
-</figure>
-<figure class="photo-card ">
+<figure class="photo-card">
 <a class="photo-open" href="../assets/fotos/palestra-rio-1600.webp" data-photo="palestra-rio" aria-label="Ampliar: Aprender em comunidade">
 <img src="../assets/fotos/palestra-rio-800.webp" srcset="../assets/fotos/palestra-rio-800.webp 800w, ../assets/fotos/palestra-rio-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 440px" width="1600" height="1066" alt="Uma pessoa apresenta uma palestra para participantes sentados no espaço do evento." loading="lazy" decoding="async">
 <span class="photo-zoom" aria-hidden="true">↗</span>
 </a>
 <figcaption>Aprender em comunidade</figcaption>
 </figure>
+<figure class="photo-card">
+<a class="photo-open" href="../assets/fotos/comunidade-1600.webp" data-photo="comunidade" aria-label="Ampliar: Comunidade reunida">
+<img src="../assets/fotos/comunidade-800.webp" srcset="../assets/fotos/comunidade-800.webp 800w, ../assets/fotos/comunidade-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 440px" width="1600" height="1057" alt="Participantes e organização reunidos no auditório, acenando para a foto." loading="lazy" decoding="async">
+<span class="photo-zoom" aria-hidden="true">↗</span>
+</a>
+<figcaption>Comunidade reunida</figcaption>
+</figure>
+<figure class="photo-card">
+<a class="photo-open" href="../assets/fotos/cafe-1600.webp" data-photo="cafe" aria-label="Ampliar: Uma pausa para se conhecer">
+<img src="../assets/fotos/cafe-800.webp" srcset="../assets/fotos/cafe-800.webp 800w, ../assets/fotos/cafe-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 440px" width="1600" height="1220" alt="Participantes de camiseta amarela conversam durante o café." loading="lazy" decoding="async">
+<span class="photo-zoom" aria-hidden="true">↗</span>
+</a>
+<figcaption>Uma pausa para se conhecer</figcaption>
+</figure>
+<figure class="photo-card">
+<a class="photo-open" href="../assets/fotos/encontros-1600.webp" data-photo="encontros" aria-label="Ampliar: Conversas que continuam">
+<img src="../assets/fotos/encontros-800.webp" srcset="../assets/fotos/encontros-800.webp 800w, ../assets/fotos/encontros-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 440px" width="1600" height="1067" alt="Participantes conversam e sorriem na área externa do evento." loading="lazy" decoding="async">
+<span class="photo-zoom" aria-hidden="true">↗</span>
+</a>
+<figcaption>Conversas que continuam</figcaption>
+</figure>
+<figure class="photo-card">
+<a class="photo-open" href="../assets/fotos/intervalo-1600.webp" data-photo="intervalo" aria-label="Ampliar: Entre uma palestra e outra">
+<img src="../assets/fotos/intervalo-800.webp" srcset="../assets/fotos/intervalo-800.webp 800w, ../assets/fotos/intervalo-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 440px" width="1600" height="900" alt="Público reunido ao redor da mesa de café durante um intervalo." loading="lazy" decoding="async">
+<span class="photo-zoom" aria-hidden="true">↗</span>
+</a>
+<figcaption>Entre uma palestra e outra</figcaption>
+</figure>
+<figure class="photo-card">
+<a class="photo-open" href="../assets/fotos/trocas-1600.webp" data-photo="trocas" aria-label="Ampliar: Gente que compartilha">
+<img src="../assets/fotos/trocas-800.webp" srcset="../assets/fotos/trocas-800.webp 800w, ../assets/fotos/trocas-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 440px" width="1600" height="1067" alt="Grupo de participantes conversa em frente à entrada do evento." loading="lazy" decoding="async">
+<span class="photo-zoom" aria-hidden="true">↗</span>
+</a>
+<figcaption>Gente que compartilha</figcaption>
+</figure>
+<figure class="photo-card">
+<a class="photo-open" href="../assets/fotos/palestra-1600.webp" data-photo="palestra" aria-label="Ampliar: Conhecimento compartilhado">
+<img src="../assets/fotos/palestra-800.webp" srcset="../assets/fotos/palestra-800.webp 800w, ../assets/fotos/palestra-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 440px" width="1600" height="900" alt="Duas pessoas apresentam uma palestra para o público no auditório." loading="lazy" decoding="async">
+<span class="photo-zoom" aria-hidden="true">↗</span>
+</a>
+<figcaption>Conhecimento compartilhado</figcaption>
+</figure>
 </div>
 <p class="about-copy about-copy-first">A Python Sudeste (PySE) é um dos grandes eventos regionais da linguagem Python no Brasil. É um encontro de pessoas que aprendem juntas, trocam experiências e constroem comunidade. Tem por objetivo fomentar e compartilhar o conhecimento da tecnologia nos estados da região sudeste. Profissionais, estudantes, professores e entusiastas têm a chance de conhecer mais sobre as tendências de toda a área de tecnologia.</p>
 <p class="about-copy about-copy-second">São abordados temas como Inteligência Artificial, Desenvolvimento Web, Otimização, Automação e DevOps, apresentando tanto a teoria (técnicas, frameworks, processos etc.) quanto a prática (casos de uso, demonstrações e outros) nas mais diversas áreas. Também são apresentados casos de sucesso, tendências do mercado e a contribuição dos desenvolvedores para toda a sociedade.</p>
 </div>
-<div class="about-version layout-faixa" id="galeria-faixa" data-variant="faixa" aria-label="B · Entre parágrafos">
+<footer class="variant-end">
+<strong>Fim da variante A</strong>
+<a href="#sobre">Voltar às variantes ↑</a>
+</footer>
+</article>
+<article class="variant-frame" id="galeria-faixa" data-variant="faixa" aria-labelledby="titulo-faixa">
+<header class="variant-start">
+<div>
+<span class="variant-label">Início da variante B</span>
+<h2 id="titulo-faixa">B · Entre parágrafos</h2>
+</div>
+<span class="variant-photo-count">8 fotos</span>
+</header>
+<div class="about-version layout-faixa">
 <div class="about-heading">
 <h3>Sobre<br>o evento</h3>
 <p>Uma das maiores conferências regionais de Python do Brasil.</p>
@@ -244,15 +302,62 @@
 <figcaption>Conhecimento compartilhado</figcaption>
 </figure>
 </div>
-<div class="film-controls" hidden>
-<button type="button" data-film-prev aria-label="Foto anterior">←</button>
-<span data-film-status aria-live="polite">01 / 08</span>
-<button type="button" data-film-next aria-label="Próxima foto">→</button>
+<div class="film-controls" hidden="">
+<button type="button" data-film-prev="" aria-label="Foto anterior">←</button>
+<span data-film-status="" aria-live="polite">01 / 08</span>
+<button type="button" data-film-next="" aria-label="Próxima foto">→</button>
 </div>
+<nav class="film-overview" aria-label="Todas as oito fotos da variante B">
+<a class="photo-open" href="../assets/fotos/comunidade-rio-1600.webp" data-photo="comunidade-rio" aria-label="Ampliar: Mais um encontro da comunidade">
+<img src="../assets/fotos/comunidade-rio-800.webp" srcset="../assets/fotos/comunidade-rio-800.webp 800w, ../assets/fotos/comunidade-rio-1600.webp 1600w" sizes="(max-width: 760px) 22vw, 120px" width="1600" height="1067" alt="Participantes reunidos para uma foto coletiva no espaço do evento." loading="lazy" decoding="async">
+
+</a>
+<a class="photo-open" href="../assets/fotos/palestra-rio-1600.webp" data-photo="palestra-rio" aria-label="Ampliar: Aprender em comunidade">
+<img src="../assets/fotos/palestra-rio-800.webp" srcset="../assets/fotos/palestra-rio-800.webp 800w, ../assets/fotos/palestra-rio-1600.webp 1600w" sizes="(max-width: 760px) 22vw, 120px" width="1600" height="1066" alt="Uma pessoa apresenta uma palestra para participantes sentados no espaço do evento." loading="lazy" decoding="async">
+
+</a>
+<a class="photo-open" href="../assets/fotos/comunidade-1600.webp" data-photo="comunidade" aria-label="Ampliar: Comunidade reunida">
+<img src="../assets/fotos/comunidade-800.webp" srcset="../assets/fotos/comunidade-800.webp 800w, ../assets/fotos/comunidade-1600.webp 1600w" sizes="(max-width: 760px) 22vw, 120px" width="1600" height="1057" alt="Participantes e organização reunidos no auditório, acenando para a foto." loading="lazy" decoding="async">
+
+</a>
+<a class="photo-open" href="../assets/fotos/cafe-1600.webp" data-photo="cafe" aria-label="Ampliar: Uma pausa para se conhecer">
+<img src="../assets/fotos/cafe-800.webp" srcset="../assets/fotos/cafe-800.webp 800w, ../assets/fotos/cafe-1600.webp 1600w" sizes="(max-width: 760px) 22vw, 120px" width="1600" height="1220" alt="Participantes de camiseta amarela conversam durante o café." loading="lazy" decoding="async">
+
+</a>
+<a class="photo-open" href="../assets/fotos/encontros-1600.webp" data-photo="encontros" aria-label="Ampliar: Conversas que continuam">
+<img src="../assets/fotos/encontros-800.webp" srcset="../assets/fotos/encontros-800.webp 800w, ../assets/fotos/encontros-1600.webp 1600w" sizes="(max-width: 760px) 22vw, 120px" width="1600" height="1067" alt="Participantes conversam e sorriem na área externa do evento." loading="lazy" decoding="async">
+
+</a>
+<a class="photo-open" href="../assets/fotos/intervalo-1600.webp" data-photo="intervalo" aria-label="Ampliar: Entre uma palestra e outra">
+<img src="../assets/fotos/intervalo-800.webp" srcset="../assets/fotos/intervalo-800.webp 800w, ../assets/fotos/intervalo-1600.webp 1600w" sizes="(max-width: 760px) 22vw, 120px" width="1600" height="900" alt="Público reunido ao redor da mesa de café durante um intervalo." loading="lazy" decoding="async">
+
+</a>
+<a class="photo-open" href="../assets/fotos/trocas-1600.webp" data-photo="trocas" aria-label="Ampliar: Gente que compartilha">
+<img src="../assets/fotos/trocas-800.webp" srcset="../assets/fotos/trocas-800.webp 800w, ../assets/fotos/trocas-1600.webp 1600w" sizes="(max-width: 760px) 22vw, 120px" width="1600" height="1067" alt="Grupo de participantes conversa em frente à entrada do evento." loading="lazy" decoding="async">
+
+</a>
+<a class="photo-open" href="../assets/fotos/palestra-1600.webp" data-photo="palestra" aria-label="Ampliar: Conhecimento compartilhado">
+<img src="../assets/fotos/palestra-800.webp" srcset="../assets/fotos/palestra-800.webp 800w, ../assets/fotos/palestra-1600.webp 1600w" sizes="(max-width: 760px) 22vw, 120px" width="1600" height="900" alt="Duas pessoas apresentam uma palestra para o público no auditório." loading="lazy" decoding="async">
+
+</a>
+</nav>
 </div>
 <p class="about-copy about-copy-second">São abordados temas como Inteligência Artificial, Desenvolvimento Web, Otimização, Automação e DevOps, apresentando tanto a teoria (técnicas, frameworks, processos etc.) quanto a prática (casos de uso, demonstrações e outros) nas mais diversas áreas. Também são apresentados casos de sucesso, tendências do mercado e a contribuição dos desenvolvedores para toda a sociedade.</p>
 </div>
-<div class="about-version layout-mural" id="galeria-mural" data-variant="mural" aria-label="C · Colagem lateral">
+<footer class="variant-end">
+<strong>Fim da variante B</strong>
+<a href="#sobre">Voltar às variantes ↑</a>
+</footer>
+</article>
+<article class="variant-frame" id="galeria-mural" data-variant="mural" aria-labelledby="titulo-mural">
+<header class="variant-start">
+<div>
+<span class="variant-label">Início da variante C</span>
+<h2 id="titulo-mural">C · Colagem lateral</h2>
+</div>
+<span class="variant-photo-count">8 fotos</span>
+</header>
+<div class="about-version layout-mural">
 <div class="about-heading">
 <h3>Sobre<br>o evento</h3>
 <p>Uma das maiores conferências regionais de Python do Brasil.</p>
@@ -267,6 +372,27 @@
 <figcaption>Mais um encontro da comunidade</figcaption>
 </figure>
 <figure class="photo-card memory-print">
+<a class="photo-open" href="../assets/fotos/palestra-rio-1600.webp" data-photo="palestra-rio" aria-label="Ampliar: Aprender em comunidade">
+<img src="../assets/fotos/palestra-rio-800.webp" srcset="../assets/fotos/palestra-rio-800.webp 800w, ../assets/fotos/palestra-rio-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 440px" width="1600" height="1066" alt="Uma pessoa apresenta uma palestra para participantes sentados no espaço do evento." loading="lazy" decoding="async">
+<span class="photo-zoom" aria-hidden="true">↗</span>
+</a>
+<figcaption>Aprender em comunidade</figcaption>
+</figure>
+<figure class="photo-card memory-print">
+<a class="photo-open" href="../assets/fotos/comunidade-1600.webp" data-photo="comunidade" aria-label="Ampliar: Comunidade reunida">
+<img src="../assets/fotos/comunidade-800.webp" srcset="../assets/fotos/comunidade-800.webp 800w, ../assets/fotos/comunidade-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 440px" width="1600" height="1057" alt="Participantes e organização reunidos no auditório, acenando para a foto." loading="lazy" decoding="async">
+<span class="photo-zoom" aria-hidden="true">↗</span>
+</a>
+<figcaption>Comunidade reunida</figcaption>
+</figure>
+<figure class="photo-card memory-print">
+<a class="photo-open" href="../assets/fotos/cafe-1600.webp" data-photo="cafe" aria-label="Ampliar: Uma pausa para se conhecer">
+<img src="../assets/fotos/cafe-800.webp" srcset="../assets/fotos/cafe-800.webp 800w, ../assets/fotos/cafe-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 440px" width="1600" height="1220" alt="Participantes de camiseta amarela conversam durante o café." loading="lazy" decoding="async">
+<span class="photo-zoom" aria-hidden="true">↗</span>
+</a>
+<figcaption>Uma pausa para se conhecer</figcaption>
+</figure>
+<figure class="photo-card memory-print">
 <a class="photo-open" href="../assets/fotos/encontros-1600.webp" data-photo="encontros" aria-label="Ampliar: Conversas que continuam">
 <img src="../assets/fotos/encontros-800.webp" srcset="../assets/fotos/encontros-800.webp 800w, ../assets/fotos/encontros-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 440px" width="1600" height="1067" alt="Participantes conversam e sorriem na área externa do evento." loading="lazy" decoding="async">
 <span class="photo-zoom" aria-hidden="true">↗</span>
@@ -274,17 +400,44 @@
 <figcaption>Conversas que continuam</figcaption>
 </figure>
 <figure class="photo-card memory-print">
-<a class="photo-open" href="../assets/fotos/palestra-rio-1600.webp" data-photo="palestra-rio" aria-label="Ampliar: Aprender em comunidade">
-<img src="../assets/fotos/palestra-rio-800.webp" srcset="../assets/fotos/palestra-rio-800.webp 800w, ../assets/fotos/palestra-rio-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 440px" width="1600" height="1066" alt="Uma pessoa apresenta uma palestra para participantes sentados no espaço do evento." loading="lazy" decoding="async">
+<a class="photo-open" href="../assets/fotos/intervalo-1600.webp" data-photo="intervalo" aria-label="Ampliar: Entre uma palestra e outra">
+<img src="../assets/fotos/intervalo-800.webp" srcset="../assets/fotos/intervalo-800.webp 800w, ../assets/fotos/intervalo-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 440px" width="1600" height="900" alt="Público reunido ao redor da mesa de café durante um intervalo." loading="lazy" decoding="async">
 <span class="photo-zoom" aria-hidden="true">↗</span>
 </a>
-<figcaption>Aprender em comunidade</figcaption>
+<figcaption>Entre uma palestra e outra</figcaption>
+</figure>
+<figure class="photo-card memory-print">
+<a class="photo-open" href="../assets/fotos/trocas-1600.webp" data-photo="trocas" aria-label="Ampliar: Gente que compartilha">
+<img src="../assets/fotos/trocas-800.webp" srcset="../assets/fotos/trocas-800.webp 800w, ../assets/fotos/trocas-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 440px" width="1600" height="1067" alt="Grupo de participantes conversa em frente à entrada do evento." loading="lazy" decoding="async">
+<span class="photo-zoom" aria-hidden="true">↗</span>
+</a>
+<figcaption>Gente que compartilha</figcaption>
+</figure>
+<figure class="photo-card memory-print">
+<a class="photo-open" href="../assets/fotos/palestra-1600.webp" data-photo="palestra" aria-label="Ampliar: Conhecimento compartilhado">
+<img src="../assets/fotos/palestra-800.webp" srcset="../assets/fotos/palestra-800.webp 800w, ../assets/fotos/palestra-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 440px" width="1600" height="900" alt="Duas pessoas apresentam uma palestra para o público no auditório." loading="lazy" decoding="async">
+<span class="photo-zoom" aria-hidden="true">↗</span>
+</a>
+<figcaption>Conhecimento compartilhado</figcaption>
 </figure>
 </div>
 <p class="about-copy about-copy-first">A Python Sudeste (PySE) é um dos grandes eventos regionais da linguagem Python no Brasil. É um encontro de pessoas que aprendem juntas, trocam experiências e constroem comunidade. Tem por objetivo fomentar e compartilhar o conhecimento da tecnologia nos estados da região sudeste. Profissionais, estudantes, professores e entusiastas têm a chance de conhecer mais sobre as tendências de toda a área de tecnologia.</p>
 <p class="about-copy about-copy-second">São abordados temas como Inteligência Artificial, Desenvolvimento Web, Otimização, Automação e DevOps, apresentando tanto a teoria (técnicas, frameworks, processos etc.) quanto a prática (casos de uso, demonstrações e outros) nas mais diversas áreas. Também são apresentados casos de sucesso, tendências do mercado e a contribuição dos desenvolvedores para toda a sociedade.</p>
 </div>
-<div class="about-version layout-destaque" id="galeria-destaque" data-variant="destaque" aria-label="D · Foto sob o título">
+<footer class="variant-end">
+<strong>Fim da variante C</strong>
+<a href="#sobre">Voltar às variantes ↑</a>
+</footer>
+</article>
+<article class="variant-frame" id="galeria-destaque" data-variant="destaque" aria-labelledby="titulo-destaque">
+<header class="variant-start">
+<div>
+<span class="variant-label">Início da variante D</span>
+<h2 id="titulo-destaque">D · Foto sob o título</h2>
+</div>
+<span class="variant-photo-count">8 fotos</span>
+</header>
+<div class="about-version layout-destaque">
 <div class="about-heading">
 <h3>Sobre<br>o evento</h3>
 <p>Uma das maiores conferências regionais de Python do Brasil.</p>
@@ -298,36 +451,45 @@
 </a>
 <figcaption>Mais um encontro da comunidade</figcaption>
 </figure>
-<div class="photo-thumbnails" aria-label="Escolher foto" hidden>
-<button type="button" data-thumb="comunidade-rio" aria-label="Mostrar: Mais um encontro da comunidade" aria-pressed="true">
+<div class="photo-thumbnails" aria-label="Escolher foto">
+<a href="../assets/fotos/comunidade-rio-1600.webp" data-thumb="comunidade-rio" aria-label="Mostrar: Mais um encontro da comunidade" aria-current="true">
 <img src="../assets/fotos/comunidade-rio-800.webp" srcset="../assets/fotos/comunidade-rio-800.webp 800w, ../assets/fotos/comunidade-rio-1600.webp 1600w" sizes="100px" width="1600" height="1067" alt="Participantes reunidos para uma foto coletiva no espaço do evento." loading="lazy" decoding="async">
-</button>
-<button type="button" data-thumb="palestra-rio" aria-label="Mostrar: Aprender em comunidade" aria-pressed="false">
+</a>
+<a href="../assets/fotos/palestra-rio-1600.webp" data-thumb="palestra-rio" aria-label="Mostrar: Aprender em comunidade">
 <img src="../assets/fotos/palestra-rio-800.webp" srcset="../assets/fotos/palestra-rio-800.webp 800w, ../assets/fotos/palestra-rio-1600.webp 1600w" sizes="100px" width="1600" height="1066" alt="Uma pessoa apresenta uma palestra para participantes sentados no espaço do evento." loading="lazy" decoding="async">
-</button>
-<button type="button" data-thumb="comunidade" aria-label="Mostrar: Comunidade reunida" aria-pressed="false">
+</a>
+<a href="../assets/fotos/comunidade-1600.webp" data-thumb="comunidade" aria-label="Mostrar: Comunidade reunida">
 <img src="../assets/fotos/comunidade-800.webp" srcset="../assets/fotos/comunidade-800.webp 800w, ../assets/fotos/comunidade-1600.webp 1600w" sizes="100px" width="1600" height="1057" alt="Participantes e organização reunidos no auditório, acenando para a foto." loading="lazy" decoding="async">
-</button>
-<button type="button" data-thumb="cafe" aria-label="Mostrar: Uma pausa para se conhecer" aria-pressed="false">
+</a>
+<a href="../assets/fotos/cafe-1600.webp" data-thumb="cafe" aria-label="Mostrar: Uma pausa para se conhecer">
 <img src="../assets/fotos/cafe-800.webp" srcset="../assets/fotos/cafe-800.webp 800w, ../assets/fotos/cafe-1600.webp 1600w" sizes="100px" width="1600" height="1220" alt="Participantes de camiseta amarela conversam durante o café." loading="lazy" decoding="async">
-</button>
-<button type="button" data-thumb="encontros" aria-label="Mostrar: Conversas que continuam" aria-pressed="false">
+</a>
+<a href="../assets/fotos/encontros-1600.webp" data-thumb="encontros" aria-label="Mostrar: Conversas que continuam">
 <img src="../assets/fotos/encontros-800.webp" srcset="../assets/fotos/encontros-800.webp 800w, ../assets/fotos/encontros-1600.webp 1600w" sizes="100px" width="1600" height="1067" alt="Participantes conversam e sorriem na área externa do evento." loading="lazy" decoding="async">
-</button>
-<button type="button" data-thumb="intervalo" aria-label="Mostrar: Entre uma palestra e outra" aria-pressed="false">
+</a>
+<a href="../assets/fotos/intervalo-1600.webp" data-thumb="intervalo" aria-label="Mostrar: Entre uma palestra e outra">
 <img src="../assets/fotos/intervalo-800.webp" srcset="../assets/fotos/intervalo-800.webp 800w, ../assets/fotos/intervalo-1600.webp 1600w" sizes="100px" width="1600" height="900" alt="Público reunido ao redor da mesa de café durante um intervalo." loading="lazy" decoding="async">
-</button>
-<button type="button" data-thumb="trocas" aria-label="Mostrar: Gente que compartilha" aria-pressed="false">
+</a>
+<a href="../assets/fotos/trocas-1600.webp" data-thumb="trocas" aria-label="Mostrar: Gente que compartilha">
 <img src="../assets/fotos/trocas-800.webp" srcset="../assets/fotos/trocas-800.webp 800w, ../assets/fotos/trocas-1600.webp 1600w" sizes="100px" width="1600" height="1067" alt="Grupo de participantes conversa em frente à entrada do evento." loading="lazy" decoding="async">
-</button>
-<button type="button" data-thumb="palestra" aria-label="Mostrar: Conhecimento compartilhado" aria-pressed="false">
+</a>
+<a href="../assets/fotos/palestra-1600.webp" data-thumb="palestra" aria-label="Mostrar: Conhecimento compartilhado">
 <img src="../assets/fotos/palestra-800.webp" srcset="../assets/fotos/palestra-800.webp 800w, ../assets/fotos/palestra-1600.webp 1600w" sizes="100px" width="1600" height="900" alt="Duas pessoas apresentam uma palestra para o público no auditório." loading="lazy" decoding="async">
-</button>
+</a>
 </div>
 </div>
 <p class="about-copy about-copy-first">A Python Sudeste (PySE) é um dos grandes eventos regionais da linguagem Python no Brasil. É um encontro de pessoas que aprendem juntas, trocam experiências e constroem comunidade. Tem por objetivo fomentar e compartilhar o conhecimento da tecnologia nos estados da região sudeste. Profissionais, estudantes, professores e entusiastas têm a chance de conhecer mais sobre as tendências de toda a área de tecnologia.</p>
 <p class="about-copy about-copy-second">São abordados temas como Inteligência Artificial, Desenvolvimento Web, Otimização, Automação e DevOps, apresentando tanto a teoria (técnicas, frameworks, processos etc.) quanto a prática (casos de uso, demonstrações e outros) nas mais diversas áreas. Também são apresentados casos de sucesso, tendências do mercado e a contribuição dos desenvolvedores para toda a sociedade.</p>
 </div>
+<footer class="variant-end">
+<strong>Fim da variante D</strong>
+<a href="#sobre">Voltar às variantes ↑</a>
+</footer>
+</article>
+</div>
+
+
+
 
     <p class="photo-note">Fotos de edições passadas da Python Sudeste · clique para ampliar.</p>
   </div>
