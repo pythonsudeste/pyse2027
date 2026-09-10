@@ -47,13 +47,15 @@ Foram adicionadas uma barra para alternar entre as propostas e adaptações de l
 
 A seção mantém o título, os dois parágrafos e a identidade da opção 2. O texto recebeu apenas a frase “É um encontro de pessoas que aprendem juntas, trocam experiências e constroem comunidade.”, também aplicada na opção 2. O selo “pessoas > tecnologia” acompanha o título nas quatro composições.
 
-As fotos fazem parte da composição do próprio Sobre, sem títulos ou blocos de galeria adicionais após o texto. O seletor alterna a seção completa. Os links anteriores continuam válidos:
+As fotos fazem parte da composição do próprio Sobre. A página mostra as quatro variantes em sequência por padrão. Cada uma tem uma moldura, uma faixa “Início da variante A/B/C/D”, o nome, a indicação de oito fotos e uma faixa “Fim da variante”. Esses elementos delimitam as propostas para revisão; o título do evento e o texto continuam dentro de cada composição.
 
-- [A — Ao lado do texto](https://pythonsudeste.github.io/pyse2027/opcao-3/?galeria=mosaico#sobre): três fotos aproveitam a coluna do título, ao lado dos parágrafos.
-- [B — Entre parágrafos](https://pythonsudeste.github.io/pyse2027/opcao-3/?galeria=faixa#sobre): uma faixa compacta com oito fotos entra no fluxo de leitura.
-- [C — Colagem lateral](https://pythonsudeste.github.io/pyse2027/opcao-3/?galeria=mural#sobre): três fotos com pequenas sobreposições junto ao título e ao texto.
+O seletor permite ver todas ou isolar uma variante. Os links anteriores continuam válidos:
+
+- [A — Ao lado do texto](https://pythonsudeste.github.io/pyse2027/opcao-3/?galeria=mosaico#sobre): oito fotos em grade na coluna do título, ao lado dos parágrafos.
+- [B — Entre parágrafos](https://pythonsudeste.github.io/pyse2027/opcao-3/?galeria=faixa#sobre): uma faixa compacta entra no fluxo de leitura, acompanhada de oito miniaturas sempre visíveis.
+- [C — Colagem lateral](https://pythonsudeste.github.io/pyse2027/opcao-3/?galeria=mural#sobre): oito fotos com pequenas rotações junto ao título e ao texto.
 - [D — Foto sob o título](https://pythonsudeste.github.io/pyse2027/opcao-3/?galeria=destaque#sobre): foto e oito miniaturas na coluna lateral.
 
-Todas permitem ampliar as fotos em um diálogo, navegar por setas e fechar com Escape. Sem JavaScript, as variações ficam visíveis em sequência e os links abrem as imagens diretamente. Não há avanço automático das fotos.
+Todas incluem as oito fotos e permitem ampliá-las em um diálogo, navegar por setas e fechar com Escape. Sem JavaScript, as variações ficam visíveis em sequência e os links abrem as imagens diretamente, inclusive as miniaturas da opção D. Não há avanço automático das fotos.
 
 As oito imagens fornecidas em `fotos/` foram exportadas para `site/assets/fotos/` em WebP, com larguras de 800 e 1600 pixels, `srcset` e carregamento sob demanda. Os originais permanecem intactos na pasta local; somente as cópias otimizadas são versionadas e publicadas. O arquivo `site/assets/fotos/manifest.json` registra a correspondência com os nomes originais e as descrições. As legendas descrevem as cenas, sem atribuir datas ou créditos não informados.
