@@ -10,7 +10,7 @@
     border-bottom: 1px solid #2f5558;
 }
 
-.header a {
+.logo {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -44,4 +44,41 @@
     color: #7fc7cf;
     letter-spacing: .06em;
     font-family: var(--font-inter), sans-serif;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 24px;
+}
+
+.nav_links {
+    font-size: 16px;
+    font-weight: 600;
+    color: #cfe9ec;
+    padding: 6px 0;
+    transition: all .25s ease;
+}
+
+.nav_links:hover {
+    transform: scale(1.05);
+    color: #f4fcfd;
+}
+
+.subscribe_link {
+    padding: 11px 20px;
+    border-radius: 999px;
+    background: #fdc55e;
+    color: #500417;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all .25s ease;
+}
+
+.subscribe_link:hover {
+    transform: scale(1.10);
+    background: #f9c769;
+    color: #340410;
 }
