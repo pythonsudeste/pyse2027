@@ -1,0 +1,1 @@
+export { LINK_DE_INSCRICAO } from './ExternalLinks.ts';
