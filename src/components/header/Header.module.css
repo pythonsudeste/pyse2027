@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px 32px;
+    width: 100%;
+    padding: 20px clamp(16px, 4vw, 56px);
+    background: #0b2a2e;
+    border-bottom: 1px solid #2f5558;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    & img {
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #fdc55e;
+    }
+}
+
+.logo_texto {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15;
+}
+
+.logo_texto strong {
+    font-family: var(--font-archivo), sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    font-stretch: 112%;
+    letter-spacing: -.01em;
+    color: #ffeed9;
+    text-transform: uppercase;
+}
+
+.logo_texto span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #7fc7cf;
+    letter-spacing: .06em;
+    font-family: var(--font-inter), sans-serif;
+}
