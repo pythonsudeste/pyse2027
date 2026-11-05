@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import logoImg from './snake_de_bone.png';
 import { navLinks } from './navLinks';
-import { LINK_DE_INSCRICAO } from '../../../config/ExternalLinks';
+import { LINK_DE_INSCRICAO } from '@/config/ExternalLinks';
 
 export const Header = () => {
     return (
