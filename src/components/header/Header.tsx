@@ -1,9 +1,9 @@
 import styles from './Header.module.css';
 import Link from 'next/link';
-import Image from 'next/image';
 import logoImg from './snake_de_bone.png';
 import { navLinks } from './navLinks';
 import { LINK_DE_INSCRICAO } from '@/config/ExternalLinks';
+import { NewImage } from '@/feature/NewImage';
 
 export const Header = () => {
     return (
@@ -12,7 +12,7 @@ export const Header = () => {
                 href='/'
                 className={styles.logo}
             >
-                <Image
+                <NewImage
                     src={logoImg}
                     alt='Logo da PYSE'
                     width={62}
