@@ -1,0 +1,109 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: clamp(36px, 4vw, 80px) clamp(16px, 4vw, 40px) clamp(28px, 4vw, 48px);
+    background: #0f3438;
+}
+
+.banner_texto_foto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: clamp(24px, 3.6vw, 60px);
+    width: 100%;
+    max-width: 1280px;
+
+    @media(max-width: 1020px) {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.banner_texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    max-width: 600px;
+    min-width: 260px;
+    gap: 24px;
+
+    @media(max-width: 1020px) {
+        width: 90%;
+        align-items: center;
+        text-align: center;
+    }
+
+    & .chip {
+        display: inline-block;
+        padding: 6px 14px;
+        border: 1px solid #3f7a80;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: .16em;
+        text-transform: uppercase;
+        color: #7fc7cf;
+    }
+
+    & h1 {
+        font-family: 'Archivo', sans-serif;
+        font-size: clamp(46px, 7.5vw, 96px);
+        line-height: .92;
+        font-weight: 800;
+        font-stretch: 118%;
+        font-style: italic;
+        letter-spacing: -.03em;
+        color: #ffeed9;
+        text-transform: uppercase;
+
+        & span {
+            color: #fdc55e;
+        }
+    }
+
+    & p {
+        font-size: clamp(19px, 2.2vw, 24px);
+        line-height: 1.4;
+        font-weight: 500;
+        width: 90%;
+        color: #a9d6db;
+
+        @media(max-width: 1020px) {
+            width: 64%;
+        }
+    }
+
+    & .conjunto_chips {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 10px;
+
+        @media(max-width: 1020px) {
+            justify-content: center;
+        }
+
+        & .chips_quadrados {
+            padding: 12px 16px;
+            border-radius: 8px;
+            background: #1d4c52;
+            color: #ffeed9;
+            font-size: 15px;
+            font-weight: 700;
+        }
+    }
+}
+
+.banner_foto {
+    width: 50%;
+    height: 500px;
+    /* min-width: 500px; */
+    border-radius: 24px;
+    display: flex;
+
+    @media(max-width: 1020px) {
+        width: 90%;
+    }
+}

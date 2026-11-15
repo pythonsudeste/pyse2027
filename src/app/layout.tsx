@@ -14,6 +14,8 @@ const inter = Inter({
 
 const archivo = Archivo({
     subsets: ['latin'],
+    style: ['normal', 'italic'],
+    axes: ['wdth'],
     variable: '--font-archivo',
     display: 'swap',
 });
