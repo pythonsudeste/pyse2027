@@ -2,11 +2,14 @@ import { NewImage } from '@/feature/NewImage';
 import styles from './Hero.module.css';
 import image from './comunidade-rio-1600.webp';
 
+const LINK_PARA_COMPRA_DE_INGRESSO = '';
+
 export const Hero = () => {
     return (
         <section>
             <Banner />
             <Contador />
+            <Ingressos />
         </section>
     )
 }
@@ -70,6 +73,24 @@ const Contador = () => {
                         <span>Seg</span>
                     </div>
                 </div>
+            </div>
+        </div>
+    )
+}
+
+const Ingressos = () => {
+    return (
+        <div className={styles.ingressos_container}>
+            <div className={styles.ingressos_banner}>
+                <div className={styles.ingressos_banner_texto}>
+                    <h2>Ingressos em breve</h2>
+                    <p>Deixe seu e-mail e avisamos assim que o primeiro lote for liberado.</p>
+                </div>
+                <a href={LINK_PARA_COMPRA_DE_INGRESSO}>
+                    <button className={styles.ingressos_banner_link}>
+                        Quero ser avisado
+                    </button>
+                </a>
             </div>
         </div>
     )
