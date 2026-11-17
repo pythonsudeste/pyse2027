@@ -107,3 +107,91 @@
         width: 90%;
     }
 }
+
+.contador_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #0f3438;
+    padding: clamp(24px, 4vw, 44px) clamp(16px, 4vw, 40px);
+}
+
+.contador {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(18px, 3vw, 40px);
+    width: 100%;
+    height: auto;
+    max-width: 1280px;
+    padding: 26px clamp(20px, 3vw, 36px);
+    background: #ffeed9;
+    border-radius: 18px;
+
+    @media(max-width: 1020px) {
+        width: 90%;
+        justify-content: center;
+    }
+}
+
+.contador_texto {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 200px;
+
+    & h3 {
+        font-family: 'Archivo', sans-serif;
+        font-size: 19px;
+        font-weight: 800;
+        font-stretch: 112%;
+        text-transform: uppercase;
+        color: #0f3438;
+    }
+
+    & span {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 12px;
+        color: #8c6a4a;
+    }
+}
+
+.contador_numeros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(8px, 2vw, 16px);
+
+    @media(max-width: 500px) {
+        max-width: 200px;
+    }
+}
+
+.numero_contagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    padding: 12px 10px;
+    background: #0f3438;
+    border-radius: 12px;
+
+    & strong {
+        font-family: 'Archivo', sans-serif;
+        font-size: 32px;
+        font-weight: 800;
+        font-stretch: 112%;
+        color: #fdc55e;
+        line-height: 1;
+    }
+
+    & span {
+        font-size: 12px;
+        font-weight: 700;
+        color: #7fc7cf;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+    }
+}

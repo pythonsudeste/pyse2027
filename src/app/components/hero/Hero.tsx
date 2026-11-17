@@ -6,6 +6,7 @@ export const Hero = () => {
     return (
         <section>
             <Banner />
+            <Contador />
         </section>
     )
 }
@@ -37,6 +38,37 @@ const Banner = () => {
                         width='100%'
                         objectFit='cover'
                     />
+                </div>
+            </div>
+        </div>
+    )
+}
+
+const Contador = () => {
+    return (
+        <div className={styles.contador_container}>
+            <div className={styles.contador}>
+                <div className={styles.contador_texto}>
+                    <h3>Contagem regressiva</h3>
+                    <span>O desafio agora é segurar a ansiedade</span>
+                </div>
+                <div className={styles.contador_numeros}>
+                    <div className={styles.numero_contagem}>
+                        <strong>--</strong>
+                        <span>Dias</span>
+                    </div>
+                    <div className={styles.numero_contagem}>
+                        <strong>--</strong>
+                        <span>Horas</span>
+                    </div>
+                    <div className={styles.numero_contagem}>
+                        <strong>--</strong>
+                        <span>Min</span>
+                    </div>
+                    <div className={styles.numero_contagem}>
+                        <strong>--</strong>
+                        <span>Seg</span>
+                    </div>
                 </div>
             </div>
         </div>
