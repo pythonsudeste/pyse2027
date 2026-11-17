@@ -1,9 +1,10 @@
-import { Hero } from "./components/hero/Hero";
+import { Hero , SobreOEvento } from "./components";
 
 export default function Home() {
   return (
     <div>
       <Hero />
+      <SobreOEvento />
     </div>
   );
 }
