@@ -1,0 +1,136 @@
+.cronograma_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: clamp(40px, 6vw, 72px) clamp(16px, 4vw, 40px);
+    background: #0f3438;
+}
+
+.cronograma {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 32px;
+    max-width: 1280px;
+
+    @media(max-width: 1020px) {
+        width: 90%;
+    }
+}
+
+.cronograma_title h3{
+    font-family: 'Archivo', sans-serif;
+    font-size: clamp(28px, 3.4vw, 40px);
+    font-weight: 800;
+    font-stretch: 112%;
+    color: #ffeed9;
+}
+
+.cronograma_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+    width: 100%;
+    max-width: 1280px;
+
+    @media(max-width: 400px) {
+        grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 26px 22px;
+    background: #123a3f;
+    border: 1px solid #2f5558;
+    border-radius: 16px;
+
+    & span {
+        font-family: 'Archivo', sans-serif;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: .14em;
+        color: #fdc55e;
+    }
+
+    & h5 {
+        font-family: 'Archivo', sans-serif;
+        font-size: 23px;
+        font-weight: 800;
+        font-stretch: 112%;
+        color: #ffeed9;
+    }
+
+    & h6 {
+        font-size: 15px;
+        font-weight: 700;
+        color: #7fc7cf;
+    }
+
+    & p {
+        font-size: 16px;
+        line-height: 1.55;
+        color: #cfe9ec;
+    }
+}
+
+.local_do_evento {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1280px;
+    padding: 22px 26px;
+    background: #123a3f;
+    border: 1px solid #2f5558;
+    border-radius: 16px;
+}
+
+.local_do_evento_texto {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 220px;
+    flex: 1;
+
+    @media(max-width: 400px) {
+        min-width: 80%;
+    }
+
+    & h6 {
+        font-size: 15px;
+        font-weight: 800;
+        letter-spacing: .08em;
+        color: #fdc55e;
+    }
+
+    & p {
+        font-size: 16px;
+        color: #cfe9ec;
+        line-height: 1.5;
+    }
+}
+
+.local_do_evento_imagem {
+    flex: 1;
+    min-width: 240px;
+    height: 140px;
+    border-radius: 12px;
+    background: repeating-linear-gradient(45deg, #1d4c52, #1d4c52 10px, #22585f 10px, #22585f 20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media(max-width: 400px) {
+        min-width: 80%;
+    }
+
+    & img {
+        object-fit: cover;
+    }
+}
